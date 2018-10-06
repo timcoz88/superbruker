@@ -3,7 +3,7 @@ import { Button } from 'primereact/components/button/Button';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
-import '../../tabnavigation/RoutingAndTabs';
+import '../../tabnavigation/Routing';
 import logo  from './primereact-logo.png';
 
 interface IAppProps {
@@ -13,7 +13,7 @@ interface IAppState {
     count: number;
 }
 
-class PrimeReact extends React.Component<IAppProps, IAppState> {
+class Integration extends React.Component<IAppProps, IAppState> {
     
     constructor(props: IAppProps) {
         super(props);
@@ -43,4 +43,4 @@ class PrimeReact extends React.Component<IAppProps, IAppState> {
     }
 }
 
-export default PrimeReact;
+export default Integration;

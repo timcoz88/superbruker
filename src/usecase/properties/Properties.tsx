@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-class Brukeradmin extends React.Component {
+class Properties extends React.Component {
   public render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class Brukeradmin extends React.Component {
   }
 }
 
-export default Brukeradmin;
+export default Properties;
