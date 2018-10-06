@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import registerServiceWorker from './_app/registerServiceWorker';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
-import SuperAdmin from './SuperAdmin';
+import SuperAdmin from './tabnavigation/RoutingAndTabs';
 
 ReactDOM.render(
   <SuperAdmin />,

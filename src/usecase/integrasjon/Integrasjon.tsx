@@ -3,7 +3,7 @@ import { Button } from 'primereact/components/button/Button';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
-import './App.css';
+import '../../tabnavigation/RoutingAndTabs';
 import logo  from './primereact-logo.png';
 
 interface IAppProps {

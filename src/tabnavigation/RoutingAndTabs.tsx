@@ -3,12 +3,13 @@ import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import * as React from 'react';
 import { HashRouter, NavLink, Route } from "react-router-dom";
+
+import Brevadmin from '../usecase/brev/Brevadmin';
+import PrimeReact from '../usecase/integrasjon/Integrasjon';
+import Køadmin from '../usecase/kø/Køadmin';
+import Logging from '../usecase/logging/Logging';
+import Brukeradmin from '../usecase/properties/Properties';
 import './App.css';
-import Brevadmin from "./Brevadmin";
-import Brukeradmin from "./Brukeradmin";
-import Køadmin from "./Køadmin";
-import PrimeReact from "./PrimeReact";
-import User from "./User";
 
 class SuperAdmin extends React.Component {
   public state = {
@@ -29,14 +30,14 @@ class SuperAdmin extends React.Component {
               <Tab label="Brevadmin" component={NavLink}{...{ to: '/' } as any} />
               <Tab label="Brukeradmin" component={NavLink}{...{ to: '/brukeradmin' } as any} />
               <Tab label="Køadmin" component={NavLink}{...{ to: '/Køadmin' } as any} />
-              <Tab label="User" component={NavLink}{...{ to: '/user' } as any} />
-              <Tab label="PrimeReact" component={NavLink}{...{ to: '/primereact' } as any} />
+              <Tab label="Logging" component={NavLink}{...{ to: '/logging' } as any} />
+              <Tab label="Integrasjon" component={NavLink}{...{ to: '/primereact' } as any} />
 
             </Tabs>
             <Route path="/" exact={true} component={Brevadmin} />
             <Route path="/brukeradmin" component={Brukeradmin} />
             <Route path="/Køadmin" component={Køadmin} />
-            <Route path="/user" component={User} />
+            <Route path="/logging" component={Logging} />
             <Route path="/primereact" component={PrimeReact} />
           </AppBar>
         </div>
