@@ -8,14 +8,14 @@ import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
 import { IApplicationProps } from "../../admin_statemanagement/actions/App.Actions";
 import * as AppActionCreators from "../../admin_statemanagement/actions/App.Actions";
-import { Utility } from '../../admin_statemanagement/state/Utility';
+import { Queue } from '../../admin_statemanagement/state/Queue';
 
 import { AppState } from '../../admin_statemanagement/state/AppState';
 import { connect } from "react-redux";
 
 
 interface IAppProps extends IApplicationProps {
-  utility: Utility;
+  queue: Queue;
   classes: any;
   theme?: any;
 }
@@ -28,15 +28,15 @@ interface IState {
 class Køadmin extends React.Component<IAppProps, IState> {
 
   public handleDrawerOpen = () => {
-    this.props.openDrawer();
+    this.props.enableQueue();
   };
 
   public handleDrawerClose = () => {
-    this.props.closeDrawer();
+    this.props.disableQueue();
   };
 
   public render() {
-    const { utility } = this.props;
+    const { queue } = this.props;
 
     return (
       <div>
@@ -44,7 +44,7 @@ class Køadmin extends React.Component<IAppProps, IState> {
         <ol>
           <li ><Button onClick={this.handleDrawerOpen}>Open</Button></li>
           <li ><Button onClick={this.handleDrawerClose}>Close</Button></li>
-          <li> <Checkbox checked={utility.drawerOpen}>state</Checkbox></li>
+          <li> <Checkbox checked={queue.enableQueue}>state</Checkbox></li>
 
         </ol>
       </div>
@@ -54,7 +54,7 @@ class Køadmin extends React.Component<IAppProps, IState> {
 
 
 const mapStateToProps = (state: AppState) => ({
-  utility: state.utility
+  queue: state.queue
 
 });
 

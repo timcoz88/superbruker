@@ -1,8 +1,8 @@
 import { Action } from "redux";
 
 export enum ActionType {
-    OPEN_DRAWER,
-    CLOSE_DRAWER,
+    ENABLE_QUEUE,
+    DISABLED_QUEUE,
     
     LOGIN_REQUEST,
     LOGIN_SUCCESS,

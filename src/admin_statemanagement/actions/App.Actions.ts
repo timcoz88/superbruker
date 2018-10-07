@@ -2,19 +2,19 @@
 import { ActionType, IAppAction } from './Helpers';
 
 export interface IApplicationProps {
-    openDrawer: () => IAppAction;
-    closeDrawer: () => IAppAction;
+    enableQueue: () => IAppAction;
+    disableQueue: () => IAppAction;
 }
 
-export const openDrawer = (): IAppAction => {
+export const enableQueue = (): IAppAction => {
     return {
-        type: ActionType.OPEN_DRAWER
+        type: ActionType.ENABLE_QUEUE
     };
 };
 
-export const closeDrawer = (): IAppAction => {
+export const disableQueue = (): IAppAction => {
     return {
-        type: ActionType.CLOSE_DRAWER
+        type: ActionType.DISABLED_QUEUE
     };
 };
 

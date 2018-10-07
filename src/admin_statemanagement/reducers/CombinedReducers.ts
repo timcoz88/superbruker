@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import { UtilityReducer } from './UtilityReducer';
+import { QueueReducer } from './QueueReducer';
 
 
 export const reducers = combineReducers({
-    utility: UtilityReducer,
+    queue: QueueReducer,
 });

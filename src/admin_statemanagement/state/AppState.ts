@@ -1,17 +1,17 @@
-import { Utility } from './Utility';
+import { Queue } from './Queue';
 import { Model } from "./Helpers";
 
 
 export interface IAppState {
-    utility?: Utility;
+    queue?: Queue;
 }
 
 export const AppStateModel = Model<IAppState>({
-    utility: new Utility()
+    queue: new Queue()
 });
 
 export class AppState extends AppStateModel {
-    public static UTILITY = 'utility';
-    public utility: Utility;
+    public static QUEUE = 'queue';
+    public queue: Queue;
 }
 
