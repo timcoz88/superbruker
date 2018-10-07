@@ -1,12 +1,22 @@
 import 'font-awesome/css/font-awesome.css';
+import * as _ from "lodash";
 import { Button } from 'primereact/components/button/Button';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators, Dispatch } from 'redux';
+import { IApplicationProps } from 'src/admin_statemanagement/actions/App.Actions';
+import { AppState } from 'src/admin_statemanagement/state/AppState';
+import * as AppActionCreators from "../../admin_statemanagement/actions/App.Actions";
+import { Increment } from '../../admin_statemanagement/state/Increment';
 import '../../tabnavigation/Routing';
-import logo  from './primereact-logo.png';
+import logo from "./primereact-logo.png"
 
-interface IAppProps {
+
+
+interface IAppProps extends IApplicationProps {
+    increment: Increment 
     a: number
 }
 interface IAppState {
@@ -15,21 +25,13 @@ interface IAppState {
 
 class Integration extends React.Component<IAppProps, IAppState> {
     
-    constructor(props: IAppProps) {
-        super(props);
-        this.state = {
-            count: 0
-        };
-        this.increment = this.increment.bind(this);
-    }
-    
-  public  increment() {
-        this.setState({
-            count: this.state.count + 1
-        });
-    }
+    public increment = () => {
+        this.props.incrementStuff();
+      };
     
     public render() {
+        const { increment } = this.props;     
+           
         return (
             <div className="App">
                 <div className="App-header">
@@ -37,10 +39,29 @@ class Integration extends React.Component<IAppProps, IAppState> {
                 </div>
                 <br/>
                 <Button label="PrimeReact" onClick={this.increment} />
-                <p>Number of Clicks:{this.state.count}</p>
+                <p>Number of Clicks:  
+                <br/>{increment.increment}</p>
             </div>
         );
     }
 }
 
-export default Integration;
+const mapStateToProps = (state: AppState) => ({
+    increment: state.increment
+  
+  });
+  
+  const mapDispatchtoProps = (dispatch: Dispatch) =>
+    bindActionCreators(
+      _.assign(
+        {},
+        AppActionCreators           
+      ),
+      dispatch
+    );
+  
+  export default connect(
+    mapStateToProps,
+    mapDispatchtoProps
+  )(Integration as any);
+  

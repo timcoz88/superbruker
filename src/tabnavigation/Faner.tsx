@@ -20,7 +20,7 @@ class Faner extends React.Component {
               <Tab label="Brukeradmin" component={NavLink}{...{ to: '/brukeradmin' } as any} />
               <Tab label="Køadmin" component={NavLink}{...{ to: '/Køadmin' } as any} />
               <Tab label="Logging" component={NavLink}{...{ to: '/logging' } as any} />
-              <Tab label="Integrasjon" component={NavLink}{...{ to: '/primereact' } as any} />
+              <Tab label="Integrasjon" component={NavLink}{...{ to: '/Integrasjon' } as any} />
             </Tabs>
 
     );

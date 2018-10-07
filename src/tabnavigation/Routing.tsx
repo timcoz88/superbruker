@@ -25,7 +25,7 @@ class Routing extends React.Component {
             <Route path="/brukeradmin" component={Properties} />
             <Route path="/Køadmin" component={Køadmin} />
             <Route path="/logging" component={Logging} />
-            <Route path="/integration" component={Integration} />
+            <Route path="/Integrasjon" component={Integration} />
           </AppBar>
         </div>
       </HashRouter>

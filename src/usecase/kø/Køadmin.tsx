@@ -1,5 +1,5 @@
+import { Button, Checkbox, withStyles } from "@material-ui/core";
 import * as _ from "lodash";
-import { withStyles, Button, Checkbox } from "@material-ui/core";
 
 import { withRouter } from "react-router";
 import { styles } from "./styles";
@@ -10,8 +10,8 @@ import { IApplicationProps } from "../../admin_statemanagement/actions/App.Actio
 import * as AppActionCreators from "../../admin_statemanagement/actions/App.Actions";
 import { Queue } from '../../admin_statemanagement/state/Queue';
 
-import { AppState } from '../../admin_statemanagement/state/AppState';
 import { connect } from "react-redux";
+import { AppState } from '../../admin_statemanagement/state/AppState';
 
 
 interface IAppProps extends IApplicationProps {
