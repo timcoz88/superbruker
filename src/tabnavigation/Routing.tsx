@@ -10,11 +10,14 @@ import Logging from '../usecase/logging/Logging';
 import Properties from '../usecase/properties/Properties';
 import './App.css';
 import Faner from './Faner';
+import { Provider } from 'react-redux';
+import { store } from '../admin_statemanagement/store/Store';
 
 class Routing extends React.Component {
   public render() {
     return (
-      <HashRouter>
+  <Provider store={store}>
+    <HashRouter>
         <div>
           <AppBar position="static">
             <Faner />
@@ -26,6 +29,9 @@ class Routing extends React.Component {
           </AppBar>
         </div>
       </HashRouter>
+  </Provider>
+
+    
     );
   }
 }
