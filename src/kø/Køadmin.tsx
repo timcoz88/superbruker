@@ -6,12 +6,12 @@ import { styles } from "./styles";
 
 import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
-import { IApplicationProps } from "../../admin_statemanagement/actions/App.Actions";
-import * as AppActionCreators from "../../admin_statemanagement/actions/App.Actions";
-import { Queue } from '../../admin_statemanagement/state/Queue';
+import { IApplicationProps } from "../admin_statemanagement/actions/App.Actions";
+import * as AppActionCreators from "../admin_statemanagement/actions/App.Actions";
+import { Queue } from '../admin_statemanagement/state/Queue';
 
 import { connect } from "react-redux";
-import { AppState } from '../../admin_statemanagement/state/AppState';
+import { AppState } from '../admin_statemanagement/state/AppState';
 
 
 interface IAppProps extends IApplicationProps {

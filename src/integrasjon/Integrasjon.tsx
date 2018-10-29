@@ -6,11 +6,11 @@ import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
-import { IApplicationProps } from 'src/admin_statemanagement/actions/App.Actions';
-import { AppState } from 'src/admin_statemanagement/state/AppState';
-import * as AppActionCreators from "../../admin_statemanagement/actions/App.Actions";
-import { Increment } from '../../admin_statemanagement/state/Increment';
-import '../../tabnavigation/Routing';
+import { IApplicationProps } from '../admin_statemanagement/actions/App.Actions';
+import * as AppActionCreators from "../admin_statemanagement/actions/App.Actions";
+import { AppState } from '../admin_statemanagement/state/AppState';
+import { Increment } from '../admin_statemanagement/state/Increment';
+import '../tabnavigation/Routing';
 import logo from "./primereact-logo.png"
 
 

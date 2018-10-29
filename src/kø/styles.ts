@@ -8,16 +8,21 @@ export const styles = (theme: Theme) => ({
       height: '100vh',
       minHeight: '100%',
       zIndex: 1,
+            // tslint:disable-next-line:object-literal-sort-keys
       overflow: 'hidden',
       position: 'relative',
+            // tslint:disable-next-line:object-literal-sort-keys
       display: 'flex',
       width: '100%',
       backgroundColor: theme.palette.background.default,
     },
+    // tslint:disable-next-line:object-literal-sort-keys
     appBar: {
       zIndex: theme.zIndex.drawer + 1,
+      // tslint:disable-next-line:object-literal-sort-keys
       transition: theme.transitions.create(['width', 'margin'], {
         easing: theme.transitions.easing.sharp,
+        // tslint:disable-next-line:object-literal-sort-keys
         duration: theme.transitions.duration.leavingScreen,
       }),
       [theme.breakpoints.up('md')]: {
@@ -27,8 +32,10 @@ export const styles = (theme: Theme) => ({
     appBarShift: {
       marginLeft: drawerWidth,
       width: `calc(100% - ${drawerWidth}px)`,
+      // tslint:disable-next-line:object-literal-sort-keys
       transition: theme.transitions.create(['width', 'margin'], {
         easing: theme.transitions.easing.sharp,
+        // tslint:disable-next-line:object-literal-sort-keys  
         duration: theme.transitions.duration.enteringScreen,
       }),
     },
@@ -44,8 +51,10 @@ export const styles = (theme: Theme) => ({
       top: 0,
       whiteSpace: 'nowrap',
       width: drawerWidth,
+      // tslint:disable-next-line:object-literal-sort-keys
       transition: theme.transitions.create('width', {
         easing: theme.transitions.easing.sharp,
+        // tslint:disable-next-line:object-literal-sort-keys
         duration: theme.transitions.duration.enteringScreen,
       })
   
@@ -54,6 +63,7 @@ export const styles = (theme: Theme) => ({
       overflowX: 'hidden',
       transition: theme.transitions.create('width', {
         easing: theme.transitions.easing.sharp,
+        // tslint:disable-next-line:object-literal-sort-keys
         duration: theme.transitions.duration.leavingScreen,
       }),
       width: theme.spacing.unit * 7,
@@ -63,6 +73,7 @@ export const styles = (theme: Theme) => ({
     },
     toolbar: {
       display: 'flex',
+      // tslint:disable-next-line:object-literal-sort-keys
       alignItems: 'center',
       justifyContent: 'flex-end',
       padding: '0 8px',
@@ -70,6 +81,7 @@ export const styles = (theme: Theme) => ({
     },
     content: {
       flexGrow: 1,
+      // tslint:disable-next-line:object-literal-sort-keys
       backgroundColor: theme.palette.background.default,
       padding: theme.spacing.unit * 3,
       minHeight: '100%',

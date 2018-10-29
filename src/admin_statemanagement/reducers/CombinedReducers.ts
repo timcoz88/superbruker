@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
-import { QueueReducer } from './QueueReducer';
 import { IncrementReducer } from './IncrementReducer';
+import { QueueReducer } from './QueueReducer';
 
 
 export const reducers = combineReducers({
+    increment : IncrementReducer,
     queue: QueueReducer,
-    increment : IncrementReducer
 });

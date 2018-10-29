@@ -1,6 +1,6 @@
-import { Queue } from './Queue';
-import { Increment } from './Increment';
 import { Model } from "./Helpers";
+import { Increment } from './Increment';
+import { Queue } from './Queue';
 
 
 export interface IAppState {
@@ -9,8 +9,8 @@ export interface IAppState {
 }
 
 export const AppStateModel = Model<IAppState>({
+    increment : new Increment(),
     queue: new Queue(),
-    increment : new Increment()
 
 });
 
