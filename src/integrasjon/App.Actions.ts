@@ -2,9 +2,10 @@
 import { ActionType, IAppAction } from './Helpers';
 
 export interface IApplicationProps {
-    incrementStuff : () => IAppAction;
+    incrementCounter : () => IAppAction;
 }
-export const incrementStuff = ():  IAppAction => {
+
+export const incrementCounter = ():  IAppAction => {
     return {
         type: ActionType.INCREMENT
     };

@@ -23,8 +23,8 @@ interface IAppState {
 
 class Integration extends React.Component<IAppProps, IAppState> {
     
-    public increment = () => {
-        this.props.incrementStuff();
+    public incrementCounter = () => {
+        this.props.incrementCounter();
       };
     
     public render() {
@@ -36,7 +36,7 @@ class Integration extends React.Component<IAppProps, IAppState> {
                     <img className="App-logo" alt="logo" />
                 </div>
                 <br/>
-                <Button label="PrimeReact" onClick={this.increment} />
+                <Button label="PrimeReact" onClick={this.incrementCounter} />
                 <p>Number of Clicks:  
                 <br/>{increment.increment}</p>
             </div>
