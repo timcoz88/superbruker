@@ -9,9 +9,12 @@ import Integration from '../integrasjon/Integrasjon';
 import Køadmin from '../kø/Køadmin';
 import Logging from '../logging/Logging';
 import Properties from '../properties/Properties';
-import { store } from '../store/Store';
+import configureStore from '../store/configureStore';
+// import { store } from '../store/Store';
 import './App.css';
+import DevTools from './DevTools';
 import Faner from './Faner';
+const store = configureStore();
 
 class Routing extends React.Component {
   public render() {
@@ -27,8 +30,10 @@ class Routing extends React.Component {
             <Route path="/logging" component={Logging} />
             <Route path="/Integrasjon" component={Integration} />
           </AppBar>
+          <DevTools />
         </div>
       </HashRouter>
+      
   </Provider>
 
     

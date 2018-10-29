@@ -55,6 +55,9 @@
     "@types/node": "^10.10.1",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "redux-devtools": "^3.0.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.2"
   }
 }
