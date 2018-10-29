@@ -1,4 +1,4 @@
-import { Model } from "../admin_statemanagement/state/Helpers";
+import { Model } from "../store/Helpers";
 
 export interface IIncrement {
     increment?: number;

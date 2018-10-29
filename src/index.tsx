@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import registerServiceWorker from './_app/registerServiceWorker';
 import './index.css';
-import Routing from './tabnavigation/Routing';
+import Routing from './routing/Routing';
 
 ReactDOM.render(
   <Routing />,

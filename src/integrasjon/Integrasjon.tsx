@@ -6,7 +6,6 @@ import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
-import '../tabnavigation/Routing';
 import { IApplicationProps } from './App.Actions';
 import * as AppActionCreators from "./App.Actions";
 import { AppState } from './AppState';

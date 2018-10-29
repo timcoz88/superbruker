@@ -4,12 +4,12 @@ import * as React from 'react';
 import { HashRouter, Route } from "react-router-dom";
 
 import { Provider } from 'react-redux';
-import { store } from '../admin_statemanagement/store/Store';
 import Brevadmin from '../brev/Brevadmin';
 import Integration from '../integrasjon/Integrasjon';
 import Køadmin from '../kø/Køadmin';
 import Logging from '../logging/Logging';
 import Properties from '../properties/Properties';
+import { store } from '../store/Store';
 import './App.css';
 import Faner from './Faner';
 
