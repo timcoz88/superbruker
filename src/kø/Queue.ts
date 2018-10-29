@@ -1,4 +1,4 @@
-import { Model } from "./Helpers";
+import { Model } from "../admin_statemanagement/state/Helpers";
 
 export interface IQueue {
     enableQueue?: boolean;

@@ -6,12 +6,11 @@ import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
-import { IApplicationProps } from '../admin_statemanagement/actions/App.Actions';
-import * as AppActionCreators from "../admin_statemanagement/actions/App.Actions";
-import { AppState } from '../admin_statemanagement/state/AppState';
-import { Increment } from '../admin_statemanagement/state/Increment';
 import '../tabnavigation/Routing';
-import logo from "./primereact-logo.png"
+import { IApplicationProps } from './App.Actions';
+import * as AppActionCreators from "./App.Actions";
+import { AppState } from './AppState';
+import { Increment } from './Increment';
 
 
 
@@ -35,7 +34,7 @@ class Integration extends React.Component<IAppProps, IAppState> {
         return (
             <div className="App">
                 <div className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img className="App-logo" alt="logo" />
                 </div>
                 <br/>
                 <Button label="PrimeReact" onClick={this.increment} />
