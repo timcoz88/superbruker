@@ -4,6 +4,7 @@ import * as React from 'react';
 import { HashRouter, Route } from "react-router-dom";
 
 import { Provider } from 'react-redux';
+import DevTools from '../_app/DevTools';
 import Brevadmin from '../brev/Brevadmin';
 import Integration from '../integrasjon/Integrasjon';
 import Køadmin from '../kø/Køadmin';
@@ -12,11 +13,10 @@ import Properties from '../properties/Properties';
 import configureStore from '../store/configureStore';
 // import { store } from '../store/Store';
 import './App.css';
-import DevTools from './DevTools';
 import Faner from './Faner';
 const store = configureStore();
 
-class Routing extends React.Component {
+class App extends React.Component {
   public render() {
     return (
   <Provider store={store}>
@@ -41,4 +41,4 @@ class Routing extends React.Component {
   }
 }
 
-export default Routing;
+export default App;

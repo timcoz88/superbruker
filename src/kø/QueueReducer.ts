@@ -1,4 +1,4 @@
-import { ActionType, IAppAction } from './Helpers';
+import { ActionType, IAppAction } from './ActionTypeHelpers';
 import { Queue } from './Queue';
 
 export const QueueReducer = (state: Queue = new Queue(), action: IAppAction): Queue => {

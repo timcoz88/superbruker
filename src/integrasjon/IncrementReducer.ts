@@ -1,4 +1,4 @@
-import { ActionType, IAppAction } from './Helpers';
+import { ActionType, IAppAction } from './ActionTypeHelpers';
 import { Increment } from './Increment';
 
 export const IncrementReducer = (state: Increment = new Increment(), action: IAppAction): Increment => {

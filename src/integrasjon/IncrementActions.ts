@@ -1,5 +1,5 @@
 
-import { ActionType, IAppAction } from './Helpers';
+import { ActionType, IAppAction } from './ActionTypeHelpers';
 
 export interface IApplicationProps {
     incrementCounter : () => IAppAction;

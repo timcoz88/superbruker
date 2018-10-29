@@ -6,9 +6,9 @@ import { styles } from "./styles";
 
 import * as React from 'react';
 import { bindActionCreators, Dispatch } from 'redux';
-import { IApplicationProps } from "./App.Actions";
-import * as AppActionCreators from "./App.Actions";
 import { Queue } from './Queue';
+import { IApplicationProps } from "./QueueActions";
+import * as AppActionCreators from "./QueueActions";
 
 import { connect } from "react-redux";
 import { AppState } from './AppState';

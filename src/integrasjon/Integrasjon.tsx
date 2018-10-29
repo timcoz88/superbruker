@@ -6,10 +6,10 @@ import 'primereact/resources/themes/omega/theme.css';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
-import { IApplicationProps } from './App.Actions';
-import * as AppActionCreators from "./App.Actions";
 import { AppState } from './AppState';
 import { Increment } from './Increment';
+import { IApplicationProps } from './IncrementActions';
+import * as AppActionCreators from "./IncrementActions";
 
 
 
